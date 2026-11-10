@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Notícias | Jornada Viagens</title>
+    <!-- Bootstrap primeiro, para o seu CSS poder sobrescrever -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <header class="container-fluid bg-primary text-white text-center p-4">
+        <h1>Jornada de Viagens</h1>
+        <p class="Dados Cadastrais">Jornada de viagens ✈️🌍</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Navegação principal">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Menu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir ou fechar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+                    <a class="nav-link" href="pacotes.html">Pacotes de Viagens</a>
+                    <a class="nav-link" href="#contato">Contato</a>
+                </div>
+            </div>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Apenas um <main> por página -->
+    <main class="flex-fill container my-4">
+     
+        <form>
+            <label for="nome" class="form-label">Nome:</label>
+            <input type="text" class="form-control" id=" nome" name="nome" required>
+
+            <label for="senha" class="form-label">Senha:</label>
+            <input type="password" class="form-control" id= "senha" name="senha">        
+
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" name="email">
+
+            <label for="mensagem" class="form-label">Mensagem:</label>
+            <textarea id="mensagem" class="form-control" name="mensagem"></textarea>
+
+            <select class="form-select mt-2" aria-label="Seleção da escolaridade"
+            name="escolaridade" id="escolaridade">
+                <option selected>Selecione a escolaridade</option>
+                <option value="1">Ensino Médio</option>
+                <option value="2">Ensino Superior</option>
+                <option value="3">Pós Graduação</option>
+                <option value="4">Mestrado ou Doutorado</option>
+            </select>
+            <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="termos">
+  <label class="form-check-label" for="termos">
+    Aceito os termos e condições
+   
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="recEmail" checked
+  name="recEmail">
+  <label class="form-check-label" for="recEmail">
+    Aceito o recebimento de emails
+    
+  </label>
+</div>
+
+            <input type="submit" value="Enviar" class="btn btn-primary">
+            <input type="reset" value="Limpar" class="btn btn-danger">
+        </form>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape" id="contato">
+
+        <div class="container footer-container">
+
+            <div class="footer-copy">
+                <p>
+                    &copy; 2026 Jornada Viagens.
+                    Todos os direitos reservados.
+                </p>
+            </div>
+
+            <h2>Contatos</h2>
+
+            <address class="footer-contato">
+
+                <p>
+                    E-mail:
+                    <a href="mailto:contato@jornadaviagens.com.br">
+                        contato@jornadaviagens.com.br
+                    </a>
+                </p>
+
+                <p>
+                    Tel/WhatsApp:
+                    <a href="https://wa.me/5521912341234">
+                        (21) 91234-1234
+                    </a>
+                </p>
+            </address>
+
+            <nav class="footer-redes" aria-label="Redes sociais">
+                 <a href="https://pt-br.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="bi bi-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="X">
+                    <i class="bi bi-twitter"></i></a>
+
+            </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
